@@ -8,7 +8,7 @@
 
     <name>easy</name>
     <url>https://github.com/devlibx/userlib</url>
-    <description>A library which provides Java helpers</description>
+    <description>A library which provides Java Helpers</description>
 
     <scm>
         <connection>scm:git:https://github.com/devlibx/userlib.git</connection>
