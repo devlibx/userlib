@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.devlibx.userlib</groupId>
     <artifactId>base</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <name>easy</name>
     <url>https://github.com/devlibx/userlib</url>
