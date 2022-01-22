@@ -1,0 +1,7 @@
+messaging:
+  producers:
+    metric:
+      topic: orders
+      brokers: localhost:9092
+      sync: false
+      value.serializer: org.apache.kafka.common.serialization.BytesSerializer
