@@ -39,7 +39,7 @@ public class Application {
         KieFileSystem kfs = ks.newKieFileSystem();
 
         // Read the XLS file with the conditions
-        Resource dt = ResourceFactory.newFileResource(new File("/Users/harishbohara/Downloads/rule.xlsx"));
+        Resource dt = ResourceFactory.newFileResource(new File("/Users/harishbohara/Downloads/rule (9).xlsx"));
 
         // Option 1 -> Convert XLS to DRL file (so you can save it in DB)
         // Write it to some file and load it in file system
@@ -65,9 +65,11 @@ public class Application {
         KieContainer kContainer = ks.newKieContainer(kr.getDefaultReleaseId());
         KieSession kieSession = kContainer.newKieSession();
 
-        // This is the real code - here we are creating a customer object and runing all rules
+        // This is the real code - here we are creating a customer object and running all rules
         Customer customer = Customer.builder().type(Customer.CustomerType.INDIVIDUAL).years(20).build();
+        Hacker hacker = Hacker.builder().score(20).build();
         kieSession.insert(customer);
+        kieSession.insert(hacker);
         kieSession.fireAllRules();
 
         // Finally Result - we should have got the discount
